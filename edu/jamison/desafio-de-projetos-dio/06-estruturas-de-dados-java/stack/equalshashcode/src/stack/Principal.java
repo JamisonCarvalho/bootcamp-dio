@@ -1,0 +1,26 @@
+package stack;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+		Stack<Carro> stackCarros = new Stack<>();
+		
+		stackCarros.push(new Carro("Ford"));
+		stackCarros.push(new Carro("BMW"));
+		stackCarros.push(new Carro("Fiat"));
+		
+		System.out.println(stackCarros);
+		System.out.println(stackCarros.pop());
+		System.out.println(stackCarros);
+		System.out.println(stackCarros.peek());
+		System.out.println(stackCarros);
+		System.out.println(stackCarros.empty());
+		System.out.println(stackCarros);
+	}
+
+}
